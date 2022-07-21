@@ -1,6 +1,4 @@
-<p align="center">
-<img src="" width="190" height="190"/>
-</p>
+
 <h1 align="center">
 Emoticon Chat
 </h1>
@@ -28,7 +26,8 @@ Writing an emoji type surrounded by colons and then entering, converts it to emo
 :tableflip -> (╯°□°）╯︵ ┻━
 :fire: -> 🔥  
 ```
-
+![image info](./img2.png)
+![image info](./img1.png)
 
 
 
