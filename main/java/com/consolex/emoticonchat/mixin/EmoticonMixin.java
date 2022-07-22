@@ -52,15 +52,19 @@ public class EmoticonMixin {
 					if (string.contains(key))
 					{
 						string = string.replace(key, textToEmoji.get(key)).toString();
-						entity.sendChatMessage(string);
-						cir.cancel();
+
 					}
 				}
-
+				entity.sendChatMessage(string);
+				cir.cancel();
 
 			}
 			this.client.setScreen(null);
 
+		}
+		else if (keyCode == GLFW.GLFW_KEY_F4)
+		{
+			entity.sendChatMessage("Debug > Pressed F4");
 		}
 	}
 
