@@ -8,7 +8,7 @@ A 1.18.2 fabric mod allowing players to write emojis in chat `:emoji: --> UTF-8`
 
 >Versions: 1.18+ Compatible (FABRIC)
 
-##Typing emojis
+## Typing emojis
 Writing an emoji type surrounded by colons and then entering, converts it to emoji format.
 
 
