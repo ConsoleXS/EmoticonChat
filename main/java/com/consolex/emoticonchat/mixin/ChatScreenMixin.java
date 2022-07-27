@@ -1,5 +1,6 @@
 package com.consolex.emoticonchat.mixin;
 
+import com.consolex.emoticonchat.screen.EmojiOptions;
 import com.sun.jna.platform.win32.NTSecApi;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.screen.ChatScreen;
@@ -15,9 +16,10 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.logging.MemoryHandler;
 
 @Mixin(ChatScreen.class)
-public class EmoticonMixin {
+public class ChatScreenMixin {
 	ClientPlayerEntity entity = MinecraftClient.getInstance().player;
 
 	@Shadow
@@ -64,7 +66,7 @@ public class EmoticonMixin {
 		}
 		else if (keyCode == GLFW.GLFW_KEY_F4)
 		{
-			entity.sendChatMessage("Debug > Pressed F4");
+			client.setScreen(new EmojiOptions());
 		}
 	}
 
